@@ -106,4 +106,10 @@ class MainActivity2 : AppCompatActivity() {
         originalTable.setContentTextSize(40)
         originalTable.build()
     }
+
+    override fun onBackPressed() {
+        finish()
+        startActivity(Intent(this, MainActivity::class.java))
+        super.onBackPressed()
+    }
 }

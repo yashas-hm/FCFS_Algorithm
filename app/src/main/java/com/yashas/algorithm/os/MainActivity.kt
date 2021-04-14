@@ -21,12 +21,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        FCFSAlgorithm(
-            3,
-            arrayListOf(1, 2, 3),
-            arrayListOf(5, 9, 6),
-            arrayListOf(0, 3, 6)
-        )
         setUp()
     }
 
