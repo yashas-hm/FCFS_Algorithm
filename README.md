@@ -1,6 +1,6 @@
 # FCFS_Algorithm
 App to demonstrate First Come First Serve Scheduling process.
-Shows data on a table
+<br>Shows data on a table
 
 App demonstrate use of:
  - FCFS Algorithm
