@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FCFS Algorithm</string>
+    <string name="select_size">Select Size</string>
+    <string name="enter_numbers_into_the_text_fields_separated_by_commas">Enter numbers into the text fields separated by commas.</string>
+    <string name="enter_burst_time">Enter Burst Time</string>
+    <string name="enter_arrival_time">Enter Arrival Time</string>
+    <string name="submit">Submit</string>
+    <string name="average_waiting_time">Average Waiting Time</string>
+    <string name="average_turn_around_time">Average Turn Around Time</string>
+</resources>

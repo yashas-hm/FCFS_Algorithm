@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    android:padding="15dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_numbers_into_the_text_fields_separated_by_commas"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"
+        android:fontFamily="@font/nunito_sans_regular"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
+        android:drawableStart="@drawable/ic_info"
+        android:drawablePadding="10dp"
+        android:gravity="center_horizontal|top"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/btEt"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_burst_time"
+        android:background="@drawable/rounded_box"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionNext"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/atEt"
+        app:layout_constraintTop_toBottomOf="@id/btEt"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_arrival_time"
+        android:background="@drawable/rounded_box"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionDone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_box"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
