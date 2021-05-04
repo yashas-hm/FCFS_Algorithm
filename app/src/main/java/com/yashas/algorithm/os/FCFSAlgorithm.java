@@ -13,7 +13,7 @@ public class FCFSAlgorithm {
     private float averageTurnAroundTime = 0;
     private float averageWaitingTime = 0;
 
-    public FCFSAlgorithm(int size, ArrayList<Integer> process, ArrayList<Integer> burstTime, ArrayList<Integer> arrivalTime){
+    public FCFSAlgorithm(int size, ArrayList<Integer> process, ArrayList<Integer> burstTime, ArrayList<Integer> arrivalTime) {
         this.n = size;
         this.processes = process;
         this.burstTime = burstTime;
@@ -52,18 +52,18 @@ public class FCFSAlgorithm {
 
         findTurnAroundTime();
 
-        System.out.println("Processes " + " Burst Time " + " Arrival Time "
-                + " Waiting Time " + " Turn-Around Time "
-                + " Completion Time \n");
+//        System.out.println("Processes " + " Burst Time " + " Arrival Time "
+//                + " Waiting Time " + " Turn-Around Time "
+//                + " Completion Time \n");
         int total_wt = 0, total_tat = 0;
 
         for (int i = 0; i < n; i++) {
             total_wt = total_wt + waitingTime.get(i);
             total_tat = total_tat + turnAroundTime.get(i);
             completionTime.add(turnAroundTime.get(i) + arrivalTime.get(i));
-            System.out.println(i + 1 + "\t\t" + burstTime.get(i) + "\t\t"
-                    + arrivalTime.get(i) + "\t\t" + waitingTime.get(i) + "\t\t "
-                    + turnAroundTime.get(i) + "\t\t " + completionTime.get(i));
+//            System.out.println("\tP" + (i + 1) + "\t\t" + burstTime.get(i) + "\t\t\t"
+//                    + arrivalTime.get(i) + "\t\t\t" + waitingTime.get(i) + "\t\t\t"
+//                    + turnAroundTime.get(i) + "\t\t\t" + completionTime.get(i));
         }
 
         System.out.println(processes);
@@ -71,17 +71,17 @@ public class FCFSAlgorithm {
         averageTurnAroundTime = (float) total_wt / (float) n;
         averageWaitingTime = (float) total_tat / (float) n;
 
-        System.out.println("Average waiting time = "
-                + averageTurnAroundTime);
-        System.out.println("\nAverage turn around time = "
-                + averageWaitingTime);
+//        System.out.println("Average waiting time = "
+//                + averageTurnAroundTime);
+//        System.out.println("\nAverage turn around time = "
+//                + averageWaitingTime);
     }
 
-    public ArrayList<Integer> getTurnAroundTime(){
+    public ArrayList<Integer> getTurnAroundTime() {
         return turnAroundTime;
     }
 
-    public ArrayList<Integer> getWaitingTime(){
+    public ArrayList<Integer> getWaitingTime() {
         return waitingTime;
     }
 
@@ -89,7 +89,7 @@ public class FCFSAlgorithm {
         return averageTurnAroundTime;
     }
 
-    public float getAverageWaitingTime(){
+    public float getAverageWaitingTime() {
         return averageWaitingTime;
     }
 
